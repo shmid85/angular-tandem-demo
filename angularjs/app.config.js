@@ -36,9 +36,6 @@ run(function($rootScope) {
         window.parent.postMessage({
             type: 'routing',
             path
-        //TODO: Add proxing and origin
-        }, '*');
-
-        console.log('Angularjs', window.location.href);
+        }, window.location.origin);
     });
 });
