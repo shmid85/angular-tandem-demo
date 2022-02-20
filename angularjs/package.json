@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server ./ -a localhost -p 8000 -c-1",
-    "__start": "webpack-dev-server --mode=development --open --env=dev --port=8000",
-    "start-with-proxy": "http-server ./ -a localhost -p 8000 -c-1 && webpack --config webpack.config.js",
-    "start-proxy": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --mode=development --env=dev --port=8000",
+    "start-proxy": "node proxy.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,8 +22,10 @@
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.5.1",
+    "express": "^4.17.3",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "http-proxy-middleware": "^2.0.3",
     "http-server": "^14.1.0",
     "mini-css-extract-plugin": "^2.5.3",
     "optimize-css-assets-webpack-plugin": "^6.0.1",

@@ -46,7 +46,7 @@ const routes: Routes = [
     path: '**',
     component: AppSwitcherComponent,
     data: { canShowFrame: true }
-  }
+  },
 ];
 
 @NgModule({

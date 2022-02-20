@@ -1,4 +1,4 @@
 export interface PostEventData {
-    type: 'string',
-    path: 'string'
+    type: string,
+    path: string
 }

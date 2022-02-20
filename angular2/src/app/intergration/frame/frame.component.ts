@@ -36,6 +36,6 @@ export class FrameComponent{
    * make appropriate changes according to environment the app is run.
    */
   private getFullPath(path: string): string {
-    return `${'http://localhost:8000'}/#${path}`;
+    return `${'http://localhost:8080/old'}/#${path}`;
   }
 }
